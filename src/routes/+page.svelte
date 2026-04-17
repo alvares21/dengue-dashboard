@@ -481,21 +481,32 @@
   tr { transition: transform 0.2s ease; }
   tr:hover { transform: scale(1.01); }
   
-  td { 
-    padding: 1.25rem; 
-    background: rgba(15, 23, 42, 0.5); 
-    color: #cbd5e1;
-  }
-  
-  td:first-child { border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
-  td:last-child { border-top-right-radius: 16px; border-bottom-right-radius: 16px; }
-  
-  .row-high-risk td { 
-    background: linear-gradient(90deg, rgba(239, 68, 68, 0.15) 0%, rgba(15, 23, 42, 0.5) 100%);
-  }
-  
-  .row-high-risk td:first-child { border-left: 4px solid #ef4444; }
-  .row-low-risk td:first-child { border-left: 4px solid #10b981; }
+ td { 
+  padding: 1.25rem; 
+  background: rgba(15, 23, 42, 0.4); 
+  color: #cbd5e1;
+}
+
+td:first-child { border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
+td:last-child { border-top-right-radius: 16px; border-bottom-right-radius: 16px; }
+
+.row-high-risk td { 
+  background: rgba(239, 68, 68, 0.06); 
+}
+
+.row-high-risk td:first-child { 
+  border-left: 4px solid rgba(239, 68, 68, 0.8); 
+  box-shadow: inset 40px 0 40px -20px rgba(239, 68, 68, 0.15);
+}
+
+.row-low-risk td {
+  background: rgba(16, 185, 129, 0.03);
+}
+
+.row-low-risk td:first-child { 
+  border-left: 4px solid rgba(16, 185, 129, 0.6); 
+  box-shadow: inset 40px 0 40px -20px rgba(16, 185, 129, 0.1);
+}
 
   .badge {
     padding: 0.4rem 0.8rem;
