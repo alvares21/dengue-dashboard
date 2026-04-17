@@ -1,42 +1,28 @@
-# sv
+# Dengue Analysis Dashboard: Climate & Chemical Factors
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A multidisciplinary project bridging **Computer Science** and **Chemical Engineering** to analyze the environmental catalysts of Dengue fever and evaluate chemical interventions.
 
-## Creating a project
+This project features a live, interactive web dashboard built with SvelteKit. It processes climate data (temperature and rainfall) to predict outbreak risks in real-time, while providing a detailed breakdown of chemical preventive measures like synthetic repellents and larvicidal compounds.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## ✨ Features
 
-```sh
-# create a new project
-npx sv create my-app
-```
+* **Real-time Data Processing:** Instantly calculates environmental averages and outbreak risk thresholds as data is entered.
+* **Interactive Visualization:** Dynamic line and bar charts (via Chart.js) mapping Dengue cases against temperature and rainfall metrics.
+* **Risk Prediction Matrix:** An automated table that categorizes outbreak risk based on historical data parameters.
+* **Chemical Intervention Database:** Integrated research on synthetic repellents (DEET, Picaridin), larvicides (Temephos), and eco-friendly alternatives.
+* **Modern UI/UX:** A responsive, dark-themed "glassmorphic" interface designed for clear data presentation.
 
-To recreate this project with the same configuration:
+## 🛠️ Tech Stack
 
-```sh
-# recreate this project
-bun x sv@0.15.1 create --template minimal --types ts --install bun dengue-dashboard
-```
+* **Framework:** [SvelteKit](https://kit.svelte.dev/) (Single Page Application)
+* **Language:** TypeScript
+* **Package Manager / Runtime:** [Bun](https://bun.sh/)
+* **Charting:** [Chart.js](https://www.chartjs.org/)
+* **Deployment:** GitHub Pages (Automated via GitHub Actions)
 
-## Developing
+## 🚀 Getting Started
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Prerequisites
+Make sure you have [Bun](https://bun.sh/) installed on your machine.
+```bash
+curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
