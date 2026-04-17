@@ -444,7 +444,29 @@
   .chart-container { display: flex; flex-direction: column; }
   .canvas-wrapper { position: relative; height: 350px; width: 100%; flex-grow: 1; }
 
-  .table-wrapper { overflow-x: auto; }
+.table-wrapper { 
+  overflow-x: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.3) transparent;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
   table { width: 100%; border-collapse: separate; border-spacing: 0 0.75rem; }
   th { 
     text-align: left; 
